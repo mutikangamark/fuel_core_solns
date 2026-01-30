@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fuel Core Brand Colors */
+  /* Dark Blue: #272A6B | Robin Egg Blue: #3EA6DE | Floral White: #FEFFFD */
+  
+  --color-background: #FEFFFD;
+  --color-foreground: #272A6B;
+  --color-card: #FEFFFD;
+  --color-card-foreground: #272A6B;
+  --color-popover: #FEFFFD;
+  --color-popover-foreground: #272A6B;
+  --color-primary: #272A6B;
+  --color-primary-foreground: #FEFFFD;
+  --color-secondary: #3EA6DE;
+  --color-secondary-foreground: #FEFFFD;
+  --color-muted: #e8f4fa;
+  --color-muted-foreground: #4a4d8a;
+  --color-accent: #3EA6DE;
+  --color-accent-foreground: #FEFFFD;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #FEFFFD;
+  --color-border: #d1d5db;
+  --color-input: #d1d5db;
+  --color-ring: #3EA6DE;
+  --radius: 0.5rem;
+
+  /* Brand color utilities */
+  --color-brand-dark: #272A6B;
+  --color-brand-blue: #3EA6DE;
+  --color-brand-white: #FEFFFD;
+
+  /* Button gradient colors */
+  --color-btn-gradient-from: #3EA6DE;
+  --color-btn-gradient-to: #272A6B;
+
+  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: translate(-72%, -62%) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -40%) scale(1);
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Hide scrollbar for horizontal scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
