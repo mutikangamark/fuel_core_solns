@@ -113,7 +113,7 @@ export default function HowItWorksSection() {
           >
             <div className="relative h-64 overflow-hidden">
               <Image
-                src="/images/fuel_station.jpg"
+                src="/images/fuel_station_1.jpg"
                 alt="Professional Services"
                 fill
                 className="object-cover"
