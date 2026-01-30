@@ -129,7 +129,7 @@ export function ProcessBentoGrid() {
           >
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/fuel_station.jpg"
+                src="/team/founding_team.jpg"
                 alt="Our Team"
                 fill
                 className="object-cover"

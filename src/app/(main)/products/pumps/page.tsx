@@ -84,16 +84,17 @@ export default function PumpsPage() {
   return (
     <div>
       {/* Hero Banner */}
-      <div className="relative w-full h-[280px] sm:h-[320px] bg-gradient-to-r from-[#272A6B] via-[#3a3d7a] to-[#272A6B] overflow-hidden">
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-white rounded-full" />
-          <div className="absolute top-20 left-1/4 w-24 h-24 border-4 border-white rounded-full" />
-          <div className="absolute bottom-10 left-20 w-20 h-20 border-4 border-white rounded-full" />
-          <div className="absolute top-10 right-10 w-28 h-28 border-4 border-white rounded-full" />
-          <div className="absolute top-1/2 right-1/4 w-20 h-20 border-4 border-white rounded-full" />
-          <div className="absolute bottom-10 right-20 w-24 h-24 border-4 border-white rounded-full" />
-        </div>
+      <div className="relative w-full h-[280px] sm:h-[320px] overflow-hidden">
+        {/* Background Image */}
+        <Image
+          src="/products.jpg"
+          alt="Product Catalogue"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
         
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
