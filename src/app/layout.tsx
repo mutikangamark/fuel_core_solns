@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "sonner";
+<<<<<<< /Users/markryanmutikanga/Documents/fuel-core/fuel_core_solns-main/src/app/layout.tsx
+import CookieConsent from "@/components/shared/CookieConsent";
+=======
+import CookieConsent from "@/components/ui/cookie-consent";
+>>>>>>> /Users/markryanmutikanga/.windsurf/worktrees/fuel_core_solns-main/fuel_core_solns-main-bf02fefa/src/app/layout.tsx
 import "./globals.css";
 
 const geistSans = Geist({
@@ -37,7 +42,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <CookieConsent />
         <Toaster position="top-center" richColors />
+        <CookieConsent />
       </body>
     </html>
   );
