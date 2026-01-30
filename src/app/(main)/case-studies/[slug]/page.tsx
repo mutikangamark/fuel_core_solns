@@ -181,7 +181,7 @@ export default function CaseStudyDetailPage() {
           >
             <div className="relative bg-gray-50 border border-gray-200 rounded-2xl aspect-video overflow-hidden">
               <Image
-                src="/images/fuel_station.jpg"
+                src="/images/fuel_station_1.jpg"
                 alt={study.title}
                 fill
                 className="object-cover"
@@ -403,7 +403,7 @@ export default function CaseStudyDetailPage() {
                   className="relative bg-gray-50 border border-gray-200 rounded-xl aspect-square overflow-hidden hover:border-[#3EA6DE] transition-colors"
                 >
                   <Image
-                    src="/images/fuel_station.jpg"
+                    src="/images/fuel_station_1.jpg"
                     alt={`${study.title} gallery image ${i}`}
                     fill
                     className="object-cover"

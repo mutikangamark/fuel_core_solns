@@ -83,7 +83,7 @@ export default function ServicesPage() {
       {/* Hero Banner */}
       <div className="relative w-full h-[300px] sm:h-[350px] overflow-hidden">
         <Image
-          src="/images/fuel_station.jpg"
+          src="/images/fuel_station_1.jpg"
           alt="Services"
           fill
           className="object-cover"

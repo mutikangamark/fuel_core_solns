@@ -354,7 +354,7 @@ export default function CaseStudiesPage() {
               <div className="px-6 pb-6">
                 <div className="relative bg-gray-50 rounded-xl aspect-video border border-gray-200 overflow-hidden">
                   <Image
-                    src="/images/fuel_station.jpg"
+                    src="/images/fuel_station_1.jpg"
                     alt={study.title}
                     fill
                     className="object-cover"
